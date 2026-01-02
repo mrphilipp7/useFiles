@@ -1,12 +1,43 @@
 {
   "name": "usefiles",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
+  "version": "1.0.0",
+  "private": false,
+  "description": "A headless React hook for managing files with validation, duplicates, and metadata.",
+  "keywords": ["files", "react", "hooks", "file upload", "file management"],
+  "homepage": "https://github.com/mrphilipp7/useFiles#readme",
+  "author": {
+    "name": "zach philipp",
+    "url": "https://github.com/mrphilipp7/"
   },
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/mrphilipp7/useFiles.git"
+  },
+  "bugs": {
+  "url": "https://github.com/mrphilipp7/useFiles/issues"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build:types": "bun tsc --emitDeclarationOnly",
+    "build": "bun build src/index.ts --outdir dist --minify",
+    "prepublishOnly": "bun run build:types && bun run build"
+  },
+  "exports": {
+  ".": {
+    "import": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
   "peerDependencies": {
-    "typescript": "^5"
+    "react": "^18 || ^19"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/bun": "latest"
   }
 }

@@ -1,29 +1,38 @@
 {
   "compilerOptions": {
-    // Environment setup & latest features
-    "lib": ["ESNext"],
+    // Environment & latest JS/DOM features
     "target": "ESNext",
-    "module": "Preserve",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "moduleDetection": "force",
     "jsx": "react-jsx",
-    "allowJs": true,
 
-    // Bundler mode
-    "moduleResolution": "bundler",
+    // Emit & type declarations for npm package
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist",
+    "emitDeclarationOnly": true,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true,
 
-    // Best practices
+    // Strictness / type safety
     "strict": true,
-    "skipLibCheck": true,
+    "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
+    "strictBindCallApply": true,
 
-    // Some stricter flags (disabled by default)
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
+    // Pragmatic settings
+    "skipLibCheck": true,
+    "allowJs": true,
+
+    // Optional stricter flags (good for library hygiene)
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noPropertyAccessFromIndexSignature": false
-  }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "test"]
 }
