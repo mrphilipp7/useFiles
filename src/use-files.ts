@@ -8,7 +8,7 @@ type FileItem<TMeta = unknown> = {
 
 type UseFilesProps = {
 	allowedExtensions?: string[];
-	allowedMimeTypes?: string[];
+	allowedMimeTypes?: string[]; // text/html, image/jpeg
 	maxFileSize?: number;
 	maxFiles?: number;
 	allowDuplicates?: boolean; // default: false
@@ -218,26 +218,26 @@ function useFiles({
 	}
 
 	return {
-		files,
-		fileCount,
-		totalSize,
-		hasFiles: fileCount > 0,
+		files, // tracked files
+		fileCount, // number of files
+		totalSize, // total size of all files in bytes
+		hasFiles: fileCount > 0, // boolean indicating if there are any files
 
-		addFile,
-		addFiles,
-		replaceFile,
+		addFile, // add a single file
+		addFiles, // add multiple files
+		replaceFile, // replace a file by id
 
 		removeFile,
 		reset, // remove all files
 
-		findFileById,
-		findFileByName,
-		findFilesByExtension,
-		findFilesByMimeType,
+		findFileById, // find a file by id
+		findFileByName, // find a file by name
+		findFilesByExtension, // find files by extension
+		findFilesByMimeType, // find files by mime type
 
-		updateFileMeta,
-		canAddMore,
-		remainingSlots,
+		updateFileMeta, // update meta information of a file
+		canAddMore, // check if more files can be added
+		remainingSlots, // number of remaining file slots
 	};
 }
 
