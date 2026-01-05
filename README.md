@@ -112,6 +112,15 @@ Doing this allows for
  - maxFilesSize: A number that checks a files size when it is added. It is read in bytes eg. 1000000 which would be a 1 megabyte file  
  - maxFiles: A number that caps how many files can be added to the array. 
  - allowDuplicates: A boolean that is default set to false but can allow you to upload multiple instances of the same file.
+  ```typescript
+ const files = useFiles(
+{allowedExtensions:['.jpeg'], 
+allowedMimeType:['image/jpeg'],
+maxFilesSize: 1000000,
+maxFile: 10,
+allowDuplicates: true // false by default
+})
+ ```
 
   useFiles does more than tracks your files for you! It exports a ton of great utility functions that will make management easier. 
   ```typescript
