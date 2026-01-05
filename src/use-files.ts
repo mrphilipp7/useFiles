@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 
 type FileItem<TMeta = unknown> = {
-	id: string;
+	id: string; // generated for you when you add a file
 	file: File;
 	meta?: TMeta;
 };
