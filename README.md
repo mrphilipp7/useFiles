@@ -128,7 +128,7 @@ return {
 files, // tracked files
 fileCount, // number of files
 totalSize, // total size of all files in bytes
-hasFiles: // boolean indicating if there are any files
+hasFiles, // boolean indicating if there are any files
 
 addFile, // add a single file
 addFiles, // add multiple files
