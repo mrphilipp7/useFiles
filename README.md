@@ -21,17 +21,17 @@ $ npm install usefiles
 **yarn:**
 
 ```bash
-$ npm add usefiles
+$ yarn add usefiles
 ```
 **pnpm:**
 
 ```bash
-$ npm add usefiles
+$ pnpm add usefiles
 ```
 **bun:**
 
 ```bash
-$ npm add usefiles
+$ bun add usefiles
 ```
 ## Quick example
 Since all of the utility of useFiles is handled inside of the hook. You have no need to create state variables because useFiles tracks one for you!
@@ -66,7 +66,6 @@ const handleFileChange = (event:React.ChangeEvent<HTMLInputElement>) => {
 };
 
 return (
-
 	<PageContainer>
 		<p>test</p>
 		<input  type="file"  onChange={handleFileChange}  />
@@ -148,4 +147,4 @@ remainingSlots, // number of remaining file slots
 };
 ```
 
-I hope this package does a great job of making dealing with files just a little bit easier. 
+I hope this package does a great job of making dealing with files just a little bit easier. Since it open source I encourage you to check out the code itself. Adding features or fixing bugs is all about making this hook better!
