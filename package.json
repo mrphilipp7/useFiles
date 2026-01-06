@@ -23,7 +23,7 @@
   "type": "module",
   "scripts": {
     "build:types": "bun tsc --emitDeclarationOnly",
-    "build": "bun build src/index.ts --outdir dist --minify",
+    "build": "bun build src/index.ts --outdir dist --minify --external react --external react-dom",
     "prepublishOnly": "bun run build:types && bun run build"
   },
   "exports": {
