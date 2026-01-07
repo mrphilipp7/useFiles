@@ -1,20 +1,26 @@
 {
   "name": "usefiles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "A headless React hook for managing files with validation, duplicates, and metadata.",
-  "keywords": ["files", "react", "hooks", "file upload", "file management"],
+  "keywords": [
+    "files",
+    "react",
+    "hooks",
+    "file upload",
+    "file management"
+  ],
   "homepage": "https://github.com/mrphilipp7/useFiles#readme",
   "author": {
     "name": "zach philipp",
     "url": "https://github.com/mrphilipp7/"
   },
   "repository": {
-  "type": "git",
-  "url": "git+https://github.com/mrphilipp7/useFiles.git"
+    "type": "git",
+    "url": "git+https://github.com/mrphilipp7/useFiles.git"
   },
   "bugs": {
-  "url": "https://github.com/mrphilipp7/useFiles/issues"
+    "url": "https://github.com/mrphilipp7/useFiles/issues"
   },
   "license": "MIT",
   "main": "dist/index.js",
@@ -27,12 +33,14 @@
     "prepublishOnly": "bun run build:types && bun run build"
   },
   "exports": {
-  ".": {
-    "import": "./dist/index.js",
-    "types": "./dist/index.d.ts"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "react": "^18 || ^19"
   },
