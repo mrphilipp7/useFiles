@@ -4,7 +4,7 @@ export default defineConfig({
 	title: "useFiles",
 	description:
 		"Learn how to add, replace, and manage files with useFiles React hook.",
-	base: "/useFiles/", // sets the base path for the site
+	base: "/usefiles/", // sets the base path for the site
 
 	themeConfig: {
 		sidebar: [
