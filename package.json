@@ -1,6 +1,6 @@
 {
 	"name": "usefiles",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"private": false,
 	"description": "A headless React hook for managing files with validation, duplicates, and metadata.",
 	"keywords": [
