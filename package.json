@@ -10,7 +10,7 @@
 		"file upload",
 		"file management"
 	],
-	"homepage": "https://mrphilipp7.github.io/usefiles/",
+	"homepage": "https://mrphilipp7.github.io/useFiles/",
 	"author": {
 		"name": "zach philipp",
 		"url": "https://github.com/mrphilipp7/"
@@ -32,9 +32,10 @@
 		"build": "bun build src/index.ts --outdir dist --minify --external react --external react-dom",
 		"prepublishOnly": "bun run build:types && bun run build",
 		"docs:dev": "vitepress dev docs",
-		"docs:build": "vitepress build docs",
 		"docs:preview": "vitepress preview docs",
-		"docs:serve": "vitepress serve docs"
+		"docs:serve": "vitepress serve docs",
+		"docs:build": "vitepress build docs",
+		"docs:deploy": "gh-pages -d docs/.vitepress/dist --no-history"
 	},
 	"exports": {
 		".": {
@@ -52,6 +53,7 @@
 		"@biomejs/biome": "2.3.11",
 		"@types/bun": "latest",
 		"@types/react": "^19.2.7",
+		"gh-pages": "^6.3.0",
 		"vitepress": "^1.6.4"
 	}
 }
