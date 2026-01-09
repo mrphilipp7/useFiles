@@ -46,4 +46,4 @@ function FileUploader() {
 
 ## See the full docs
 For full usage instructions, API reference, and guides, please visit the documentation:
-[useFiles Documentation](https://mrphilipp7.github.io/usefiles/)
+[useFiles Documentation](https://mrphilipp7.github.io/useFiles/)
