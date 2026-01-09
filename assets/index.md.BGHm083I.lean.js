@@ -1,0 +1,1 @@
+import{_ as a,c as i,o as e,ae as t}from"./chunks/framework.BQWFtf68.js";const k=JSON.parse('{"title":"Getting Started","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),n={name:"index.md"};function l(h,s,p,o,r,d){return e(),i("div",null,[...s[0]||(s[0]=[t("",18)])])}const c=a(n,[["render",l]]);export{k as __pageData,c as default};
