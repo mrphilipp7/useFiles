@@ -28,7 +28,7 @@
 	"types": "dist/index.d.ts",
 	"type": "module",
 	"scripts": {
-		"build:types": "bun tsc --emitDeclarationOnly",
+		"build:types": "tsc --emitDeclarationOnly",
 		"build": "bun build src/index.ts --outdir dist --minify --external react --external react-dom",
 		"prepublishOnly": "bun run build:types && bun run build",
 		"docs:dev": "vitepress dev docs",
@@ -54,6 +54,7 @@
 		"@types/bun": "latest",
 		"@types/react": "^19.2.7",
 		"gh-pages": "^6.3.0",
+		"typescript": "^5.9.3",
 		"vitepress": "^1.6.4"
 	}
 }
